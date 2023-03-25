@@ -369,7 +369,7 @@ header {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-.description-portfolio {
+/*.description-portfolio {
   color: #757575;
   font-size: 16px;
   line-height: 1.87;
@@ -381,7 +381,8 @@ header {
   line-height: 2;
   font-weight: 700;
   letter-spacing: 0.06em;
-}
+  
+}*/
 .portfolio-img-div {
   display: flex;
   flex-wrap: wrap;
@@ -417,4 +418,23 @@ header {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   padding: 20px 24px;
+}
+.portfolio-img-div > figure > figcaption {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+.portfolio-img-div > figure > figcaption h4 {
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+.portfolio-img-div > figure > figcaption p {
+  color: #757575;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  margin-top: 4px;
 }
