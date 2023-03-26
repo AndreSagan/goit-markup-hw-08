@@ -245,20 +245,20 @@ header {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer > section > address {
+.footer > div > address {
   font-style: normal;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
 }
-.footer > section > address p {
+.footer > div > address p {
   color: #ffffff;
   font-size: 14px;
   line-height: 1.71;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.footer > section > address a {
+.footer > div > address a {
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.71;
   font-size: 14px;
