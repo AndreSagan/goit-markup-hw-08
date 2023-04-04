@@ -29,6 +29,10 @@ header {
   padding-left: 15px;
   padding-right: 15px;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 * {
   padding: 0;
   margin: 0;
@@ -94,7 +98,7 @@ header {
   margin-left: 0px;
 }
 .ul-contact > li:last-child {
-  margin-left: 50px;
+  margin-left: 70px;
 }
 .ul-contact > li a {
   color: #757575;
@@ -105,7 +109,14 @@ header {
   letter-spacing: 0.02em;
 }
 
-.H1-style {
+.index-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 0;
+}
+.index-section h1 {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -115,20 +126,17 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-/*.index-section1 {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}*/
+
 .index-section button {
   background: var(--web-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   color: #ffffff;
-  margin-top: 30px;
+  border-radius: 4px;
+  margin-top: 28px;
   padding: 10px 41px 10px 42px;
 }
 .index-section button:hover,
@@ -136,18 +144,6 @@ header {
 .index-section button:active {
   background-color: var(--web-color);
   cursor: pointer;
-}
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.index-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 1600px;
-  height: 600px;
 }
 
 .index-section:first-child {
@@ -160,55 +156,38 @@ header {
   background: #f5f4fa;
   flex-direction: column;
 }
-.container2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 1170px;
-  height: 101px;
-  left: 215px;
-  top: 774px;
-}
 .index-section2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1600px;
-  height: 660px;
-  left: 0px;
-  top: 1449px;
 }
-.index-section2-ul {
+.index-section2 > ul {
   list-style: none;
   display: flex;
   gap: 30px;
 }
-.index-section2-ul > li h3 {
+.index-section2 > ul li h3 {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.index-section2-ul > li p {
+.index-section2 > ul li p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  padding: 10px 0px 0px 0px;
 }
-.container3 {
+.index-section2-2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1170px;
-  height: 386px;
-  left: 215px;
-  top: 969px;
 }
-.index-section2-h2 {
+.index-section2-2 > h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -216,18 +195,19 @@ header {
   margin-top: 94px;
   margin-bottom: 0px;
 }
+.index-section2-2 > div {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  gap: 30px;
+}
 .index-section3 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  width: 1600px;
-  height: 648px;
-  left: 0px;
-  top: 1449px;
 }
-.index-section3-h2 {
+.index-section3 > h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -237,19 +217,14 @@ header {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.index-section2-img {
+
+.index-section3 > div {
   display: flex;
   flex-direction: row;
   margin-top: 50px;
   gap: 30px;
 }
-.index-section3-img {
-  display: flex;
-  flex-direction: row;
-  margin-top: 50px;
-  gap: 30px;
-}
-.index-figure {
+.index-section3 > div figure {
   background-color: #ffffff;
   width: 270px;
   height: 368px;
@@ -258,19 +233,18 @@ header {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
-.index-figure > figcaption {
+.index-section3 > div figure figcaption {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.index-figure > figcaption h4 {
+.index-section3 > div figure figcaption h4 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
-.index-figure > figcaption p {
+.index-section3 > div figure figcaption p {
   color: #757575;
   font-size: 16px;
   line-height: 1.18;
