@@ -60,10 +60,10 @@ header {
 .navigation:active,
 .contact-footer:hover,
 .contact-footer:focus,
-.contact-footer:active,
-.contact:hover,
+.contact-footer:active
+/*.contact:hover,
 .contact:focus,
-.contact:active {
+.contact:active*/ {
   color: var(--web-color);
 }
 
@@ -91,17 +91,24 @@ header {
 .ul-contact {
   list-style: none;
   display: flex;
+  align-items: center;
   justify-content: flex-end;
-  margin-left: 371px;
+  margin-left: 345px;
   padding-left: 0px;
   margin-top: 8px;
 }
-.ul-contact-li:first-child {
+.icon-contact:first-child {
+  margin-left: 0px;
+}
+.icon-contact:last-child {
+  margin-left: 30px;
+}
+/*.ul-contact-li:first-child {
   margin-left: 0px;
 }
 .ul-contact-li:last-child {
-  margin-left: 70px;
-}
+  margin-left: 30px;
+}*/
 .contact {
   color: #757575;
   font-weight: 500;
@@ -339,4 +346,71 @@ header {
   line-height: 1.87;
   letter-spacing: 0.03em;
   margin-top: 4px;
+}
+.icon-contact {
+  align-items: center;
+  fill: #757575;
+}
+/*.icon-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  fill: #757575;
+  gap: 10px;
+}*/
+.icon-contact:hover,
+.icon-contact:focus {
+  fill: #2196f3;
+  cursor: pointer;
+}
+.icon-contact > a:hover,
+.icon-contact > a:focus,
+.icon-contact > a:active {
+  color: #2196f3;
+}
+.icon-atuty-container {
+  display: inline-flex;
+  width: 270px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+.icon-atuty {
+  fill: #212121;
+}
+.icon-atuty:hover,
+.icon-atuty:focus {
+  fill: #2196f3;
+}
+.social-links {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  fill: #afb1b8;
+  padding-bottom: 12px;
+  gap: 10px;
+}
+.social-ellipse {
+  display: flex;
+}
+.a {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  fill: #afb1b8;
+  display: inline-block;
+}
+.a:hover,
+.a:focus {
+  fill: white;
+  background: #2196f3;
+  border-radius: 50%;
+}
+
+.social-ellipse:hover,
+.social-ellipse:focus {
 }
