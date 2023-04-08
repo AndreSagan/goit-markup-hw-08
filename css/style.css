@@ -254,6 +254,15 @@ header {
   letter-spacing: 0.03em;
   margin-top: 10px;
 }
+.index-section4-h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  display: flex;
+  margin-bottom: 50px;
+}
 
 .footer {
   background-color: #2f303a;
@@ -414,7 +423,26 @@ header {
   background: #2196f3;
   border-radius: 50%;
 }
-
-.social-ellipse:hover,
-.social-ellipse:focus {
+.index-section4 {
+  display: flex;
+}
+.client-links {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.client-link {
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  display: inline-block;
+}
+.client-link:hover,
+.client-link:focus {
+  fill: #2196f3;
+  border-color: #2196f3;
 }
