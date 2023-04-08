@@ -70,7 +70,7 @@ header {
 .nav-ul-style {
   list-style: none;
   display: flex;
-  margin-top: 8px;
+
   padding-inline-start: 0px;
 }
 .nav-ul-style-li {
@@ -95,13 +95,12 @@ header {
   justify-content: flex-end;
   margin-left: 345px;
   padding-left: 0px;
-  margin-top: 8px;
 }
 .icon-contact:first-child {
   margin-left: 0px;
 }
 .icon-contact:last-child {
-  margin-left: 30px;
+  margin-left: 50px;
 }
 /*.ul-contact-li:first-child {
   margin-left: 0px;
@@ -110,12 +109,16 @@ header {
   margin-left: 30px;
 }*/
 .contact {
+  display: flex;
+
+  align-items: center;
   color: #757575;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
   letter-spacing: 0.02em;
+  gap: 10px;
 }
 .index-section {
   display: flex;
@@ -348,6 +351,8 @@ header {
   margin-top: 4px;
 }
 .icon-contact {
+  display: flex;
+
   align-items: center;
   fill: #757575;
 }
@@ -390,22 +395,21 @@ header {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
-  fill: #afb1b8;
-  padding-bottom: 12px;
   gap: 10px;
 }
 .social-ellipse {
   display: flex;
 }
-.a {
+.social-link {
   width: 44px;
   height: 44px;
   padding: 12px;
   fill: #afb1b8;
   display: inline-block;
+  margin-top: 16px;
 }
-.a:hover,
-.a:focus {
+.social-link:hover,
+.social-link:focus {
   fill: white;
   background: #2196f3;
   border-radius: 50%;
