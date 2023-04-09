@@ -365,13 +365,6 @@ header {
   align-items: center;
   fill: #757575;
 }
-/*.icon-contact {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  fill: #757575;
-  gap: 10px;
-}*/
 .icon-contact:hover,
 .icon-contact:focus {
   fill: #2196f3;
@@ -445,4 +438,39 @@ header {
 .client-link:focus {
   fill: #2196f3;
   border-color: #2196f3;
+}
+.main-page-social {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+  width: 206px;
+  height: 80px;
+}
+.footer-block {
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  gap: 70px;
+}
+.footer-main-page-h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  fill: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 20px;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #2196f3;
 }
