@@ -110,15 +110,15 @@ header {
 }*/
 .contact {
   display: flex;
-
   align-items: center;
-  color: #757575;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
   letter-spacing: 0.02em;
   gap: 10px;
+  fill: #757575;
+  color: #757575;
 }
 .index-section {
   display: flex;
@@ -361,20 +361,16 @@ header {
 }
 .icon-contact {
   display: flex;
-
   align-items: center;
-  fill: #757575;
 }
-.icon-contact:hover,
-.icon-contact:focus {
+.contact:hover,
+.contact:focus,
+.contact:active {
   fill: #2196f3;
+  color: #2196f3;
   cursor: pointer;
 }
-.icon-contact > a:hover,
-.icon-contact > a:focus,
-.icon-contact > a:active {
-  color: #2196f3;
-}
+
 .icon-atuty-container {
   display: inline-flex;
   width: 270px;
