@@ -137,15 +137,6 @@ header {
     ),
     url(../images/Baner.jpg);
 }
-/*.index-section1:first-child {
-  background: #2f303a;
-  padding: 200px 0;
-}
-.index-section:nth-child(1) {
-  flex-direction: column;
-  background: #757575;
-  padding: 200px 0;
-}*/
 .index-section-h1 {
   font-weight: 900;
   font-size: 44px;
@@ -295,7 +286,6 @@ header {
 }
 .portfolio-section {
   display: flex;
-  padding-top: 56px;
   flex-direction: column;
 }
 .portfolio-button-ul {
@@ -413,12 +403,12 @@ header {
   fill: #afb1b8;
   display: inline-block;
   margin-top: 16px;
+  border-radius: 50%;
 }
 .social-link:hover,
 .social-link:focus {
   fill: white;
   background: #2196f3;
-  border-radius: 50%;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .index-section4 {
@@ -491,7 +481,7 @@ header {
   left: 0;
   background: rgba(0, 0, 0, 0.2);
   transition-property: visibility, opacity, transform;
-  transition-duration: 2s;
+  transition-duration: 0.8s;
   opacity: 1;
   pointer-events: visible;
   visibility: visible;
@@ -547,10 +537,7 @@ header {
 .modal-button-close:hover,
 .modal-button-close:focus {
   fill: #2196f3;
-  stroke: #2196f3;
-  stroke-width: 2px;
   border-color: #2196f3;
-  border: 2px solid #2196f3;
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
