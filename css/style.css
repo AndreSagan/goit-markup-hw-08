@@ -65,6 +65,7 @@ header {
 .contact:focus,
 .contact:active*/ {
   color: var(--web-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-ul-style {
@@ -173,6 +174,7 @@ header {
 .index-section-button:active {
   background-color: var(--web-color);
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .index-section2-ul {
   list-style: none;
@@ -324,6 +326,7 @@ header {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-img-figure:hover,
 .portfolio-img-figure:hover .overlay {
@@ -331,6 +334,7 @@ header {
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
   transform: translateY(0);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-img-div {
   display: flex;
@@ -371,6 +375,7 @@ header {
   fill: #2196f3;
   color: #2196f3;
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-atuty-container {
@@ -390,6 +395,7 @@ header {
 .icon-atuty:hover,
 .icon-atuty:focus {
   fill: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-links {
   display: inline-flex;
@@ -413,6 +419,7 @@ header {
   fill: white;
   background: #2196f3;
   border-radius: 50%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .index-section4 {
   display: flex;
@@ -436,6 +443,7 @@ header {
 .client-link:focus {
   fill: #2196f3;
   border-color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-page-social {
   display: flex;
@@ -471,6 +479,7 @@ header {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop {
   position: fixed;
@@ -493,6 +502,7 @@ header {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  transition: transform 1s ease-in;
   width: 528px;
   height: 581px;
   background: #ffffff;
@@ -507,6 +517,9 @@ header {
   opacity: 0;
   transform: translate(0%, 0%) scale(0) rotate(0deg);
 }
+/*.is-hidden .modal {
+  transform: translate(0%, 0%) scale(0) rotate(0deg);
+}*/
 .is-active {
   position: relative;
   color: #2196f3;
@@ -539,6 +552,7 @@ header {
   border-color: #2196f3;
   border: 2px solid #2196f3;
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .box-overlay {
   position: relative;
