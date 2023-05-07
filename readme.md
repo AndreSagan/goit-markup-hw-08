@@ -1,4 +1,4 @@
-# goit-markup-hw-06
+# goit-markup-hw-07
 
-https://andresagan.github.io/goit-markup-hw-06/
-zadanie domowe #6
+https://andresagan.github.io/goit-markup-hw-07/
+zadanie domowe #7
