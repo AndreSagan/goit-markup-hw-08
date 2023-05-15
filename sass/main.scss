@@ -1,0 +1,47 @@
+@use "./utils/variables" as *;
+@import "./components/navigation";
+@import "./components/page-header";
+@import "./components/logo";
+@import "./components/contact";
+@import "./components/our-clients";
+@import "./components/section";
+@import "./components/baner";
+@import "./components/modal";
+@import "./components/modal-form";
+
+body {
+  font-family: $defoultFont-family;
+  color: $link-color;
+  width: 1600px;
+  margin: 0 auto;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+input,
+textarea {
+  border: none;
+  outline: none;
+}
+
+.is-active {
+  position: relative;
+  color: #2196f3;
+}
+.is-active::after {
+  content: "";
+  position: absolute;
+  background: #2196f3;
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  margin-top: 28px;
+  display: block;
+}

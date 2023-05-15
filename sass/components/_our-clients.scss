@@ -1,0 +1,28 @@
+.clients {
+  display: flex;
+}
+
+.clients {
+  &__list {
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &--link {
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: #afb1b8;
+    display: inline-block;
+  }
+}
+
+.clients--link:is(:hover, :focus) {
+  fill: $web-color;
+  border-color: $web-color;
+  transition: $defoultTransition;
+}
