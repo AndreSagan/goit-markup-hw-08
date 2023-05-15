@@ -5,11 +5,12 @@
   letter-spacing: 0.03em;
   line-height: 1.19;
   text-decoration: none;
-  color: #000000;
-}
-.logo__blue-text {
-  color: $web-color;
-}
-.logo__white-text {
-  color: #ffffff;
+  color: $black-color;
+
+  &__blue-text {
+    color: $web-color;
+  }
+  &__white-text {
+    color: $white-color;
+  }
 }

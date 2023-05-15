@@ -1,0 +1,14 @@
+.footer {
+  background-color: #2f303a;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__block {
+    display: flex;
+    flex-direction: row;
+    color: $white-color;
+    gap: 70px;
+  }
+}

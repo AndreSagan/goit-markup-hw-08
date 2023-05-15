@@ -1,8 +1,6 @@
 .clients {
   display: flex;
-}
 
-.clients {
   &__list {
     flex-direction: row;
     list-style: none;
