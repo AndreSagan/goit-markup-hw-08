@@ -1,0 +1,10 @@
+.section3 {
+  padding-top: 0px;
+
+  &__dealing {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    gap: 30px;
+  }
+}

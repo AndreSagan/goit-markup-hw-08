@@ -14,4 +14,18 @@
     padding: 25px;
     margin-bottom: 30px;
   }
+  &__h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $label-color;
+    padding: 10px 0px 0px 0px;
+  }
 }
