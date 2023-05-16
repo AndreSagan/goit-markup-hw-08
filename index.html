@@ -22,27 +22,25 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container header__box">
         <a class="logo" href="./index.html"
           ><span class="logo__blue-text">Web</span><span>Studio</span></a
         >
         <nav>
           <ul class="navigation">
-            <li class="navigation__ul-style-li">
+            <li class="navigation__list-style">
               <a
-                class="navigation__ul-style navigation--is-active"
+                class="navigation__list navigation--is-active"
                 href="./index.html"
                 >Agencja</a
               >
             </li>
-            <li class="navigation__ul-style-li">
-              <a class="navigation__ul-style" href="./portfolio.html"
-                >Portfolio</a
-              >
+            <li class="navigation__list-style">
+              <a class="navigation__list" href="./portfolio.html">Portfolio</a>
             </li>
-            <li class="navigation__ul-style-li">
-              <a class="navigation__ul-style" href="#">Kontakt</a>
+            <li class="navigation__list-style">
+              <a class="navigation__list" href="#">Kontakt</a>
             </li>
           </ul>
         </nav>
@@ -228,24 +226,39 @@
       <section class="section3 container section">
         <h2 class="section__title">Czym się zajmujemy</h2>
         <div class="section3__dealing">
-          <img
-            src="./images/img1.jpg"
-            width="370"
-            height="294"
-            alt="Aplikacje na komp"
-          />
-          <img
-            src="./images/img2.jpg"
-            width="370"
-            height="294"
-            alt="Aplikacje na tel"
-          />
-          <img
-            src="./images/img3.jpg"
-            width="370"
-            height="294"
-            alt="Aplikacje na tab"
-          />
+          <figure class="section3__figure">
+            <img
+              src="./images/img1.jpg"
+              width="370"
+              height="294"
+              alt="Aplikacje na komp"
+            />
+            <figcaption class="section3__figcaption">
+              <p>Aplikacje komputerowe</p>
+            </figcaption>
+          </figure>
+          <figure class="section3__figure">
+            <img
+              src="./images/img2.jpg"
+              width="370"
+              height="294"
+              alt="Aplikacje na tel"
+            />
+            <figcaption class="section3__figcaption">
+              <p>Aplikacje mobilne</p>
+            </figcaption>
+          </figure>
+          <figure class="section3__figure">
+            <img
+              src="./images/img3.jpg"
+              width="370"
+              height="294"
+              alt="Aplikacje na tab"
+            />
+            <figcaption class="section3__figcaption">
+              <p>Rozwiązania graficzne</p>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
