@@ -1,4 +1,4 @@
-.clients {
+.section5 {
   display: flex;
 
   &__list {
@@ -16,11 +16,12 @@
     border-radius: 4px;
     fill: $socialLink-color;
     display: inline-block;
-  }
-}
 
-.clients--link:is(:hover, :focus) {
-  fill: $web-color;
-  border-color: $web-color;
-  transition: $defoultTransition;
+    &:hover,
+    &:focus {
+      fill: $web-color;
+      border-color: $web-color;
+      transition: $defoultTransition;
+    }
+  }
 }

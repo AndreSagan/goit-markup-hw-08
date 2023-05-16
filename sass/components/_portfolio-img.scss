@@ -5,15 +5,16 @@
   gap: 30px;
 
   &__figure {
-    &:hover,
-    &:hover .portfolio-img__overlay {
-      background-color: $web-color;
+    &:focus,
+    &:hover {
       cursor: pointer;
-      color: $white-color;
       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
       border-radius: 4px;
       transition: $defoultTransition;
+    }
+    &:hover .portfolio-img__overlay {
+      transform: translatex(0);
     }
   }
   &__figcaption {
