@@ -1,0 +1,61 @@
+.portfolio-img {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 30px;
+
+  &__figure {
+    &:hover,
+    &:hover .portfolio-img__overlay {
+      background-color: $web-color;
+      cursor: pointer;
+      color: $white-color;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+      transition: $defoultTransition;
+    }
+  }
+  &__figcaption {
+    border-left: 1px solid $border2-color;
+    border-right: 1px solid $border2-color;
+    border-bottom: 1px solid $border2-color;
+    padding: 20px 24px;
+  }
+  &__figcaption-h4 {
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+  }
+  &__figcaption-p {
+    color: $label-color;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    margin-top: 4px;
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2196f3e6;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: $white-color;
+    padding: 49px 45px 49px 24px;
+    transform: translateY(100%);
+    transition: transform 250ms ease;
+  }
+  &__box-overlay {
+    position: relative;
+    width: 370px;
+    height: 294px;
+    margin: 0 auto;
+    background: transparent;
+    overflow: hidden;
+  }
+}
