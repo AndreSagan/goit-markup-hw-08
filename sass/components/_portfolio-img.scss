@@ -22,20 +22,22 @@
     border-right: 1px solid $border2-color;
     border-bottom: 1px solid $border2-color;
     padding: 20px 24px;
+
+    &__title {
+      font-size: 18px;
+      line-height: 2;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+    }
+    &__text {
+      color: $label-color;
+      font-size: 16px;
+      line-height: 1.87;
+      letter-spacing: 0.03em;
+      margin-top: 4px;
+    }
   }
-  &__figcaption-h4 {
-    font-size: 18px;
-    line-height: 2;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-  }
-  &__figcaption-p {
-    color: $label-color;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-    margin-top: 4px;
-  }
+
   &__overlay {
     position: absolute;
     top: 0;

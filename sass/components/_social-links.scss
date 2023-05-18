@@ -1,0 +1,36 @@
+.social-links {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 16px;
+  gap: 10px;
+
+  &__link {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    fill: $socialLink-color;
+    display: inline-block;
+    border-radius: 50%;
+
+    &:focus,
+    &:hover {
+      fill: $white-color;
+      background: $web-color;
+      transition: $defoultTransition;
+    }
+
+    &--footer {
+      fill: $white-color;
+      background: rgba(255, 255, 255, 0.1);
+      margin-top: 4px;
+
+      &:focus,
+      &:hover {
+        fill: $white-color;
+        background: $web-color;
+        transition: $defoultTransition;
+      }
+    }
+  }
+}
