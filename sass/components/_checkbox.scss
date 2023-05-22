@@ -51,8 +51,8 @@
     }
   }
   &__checkbox-p {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: $label-color;
     padding-top: 1px;
@@ -67,5 +67,18 @@
   }
   &__checkbox-input:checked + &__checkbox-label::after {
     border-color: $white-color;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox {
+    &__checkbox-p {
+      font-size: 14px;
+      line-height: 1.71;
+
+      & > a {
+        color: $web-color;
+      }
+    }
   }
 }

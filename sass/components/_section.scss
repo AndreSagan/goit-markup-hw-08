@@ -1,6 +1,6 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &__title {
     font-weight: 700;
@@ -17,5 +17,34 @@
       margin-top: 0px;
       margin-bottom: 50px;
     }
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    /*&__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    &--clients {
+      margin-bottom: 50px;
+    }
+
+    &--team {
+      margin-top: 0px;
+      margin-bottom: 50px;
+    }
+  }*/
   }
 }
