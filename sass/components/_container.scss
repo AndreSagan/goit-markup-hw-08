@@ -1,14 +1,22 @@
 .container {
-  width: 1200px;
+  max-width: 1200px;
+  min-width: 320px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  gap: 284px;
   display: flex;
-  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: auto;
+    /*justify-content: space-between;*/
+  }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    gap: 0px;
+    display: block;
+    width: 1200px;
+    margin: auto;
   }
 }

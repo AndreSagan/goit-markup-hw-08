@@ -1,88 +1,200 @@
 .header-box {
   display: flex;
   align-items: center;
-  flex-direction: row;
+  /*gap: 276px;*/
 
   &__navigation {
-    list-style: none;
-    display: flex;
-    padding-inline-start: 0px;
-    margin-left: 93px;
-    gap: 46px;
-  }
-
-  &__list {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: $link-color;
-
-    &:focus,
-    &:active,
-    &:hover {
-      color: $web-color;
-      transition: $defoultTransition;
-    }
-
-    &--is-active {
-      position: relative;
-      color: $web-color;
-
-      &::after {
-        content: "";
-        position: absolute;
-        background: $web-color;
-        border-radius: 2px;
-        width: 100%;
-        height: 4px;
-        margin-top: 28px;
-        display: block;
-      }
-    }
+    display: none;
   }
 
   &__contact {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-left: 345px;
-    padding-left: 0px;
+    display: none;
+  }
+}
 
-    &__text {
+@media screen and (min-width: 768px) {
+  .header-box {
+    &__navigation {
+      list-style: none;
       display: flex;
-      align-items: center;
+      padding-inline-start: 0px;
+      gap: 60px;
+
+      &:first-child {
+        margin-left: 83px;
+      }
+    }
+
+    &__list {
       font-weight: 500;
       font-size: 14px;
       line-height: 1.14;
-      text-decoration: none;
       letter-spacing: 0.02em;
-      gap: 10px;
-      fill: $label-color;
-      color: $label-color;
+      text-decoration: none;
+      color: $link-color;
 
       &:focus,
       &:active,
       &:hover {
-        fill: $web-color;
         color: $web-color;
-        cursor: pointer;
         transition: $defoultTransition;
+      }
+
+      &--is-active {
+        position: relative;
+        color: $web-color;
+
+        &::after {
+          content: "";
+          position: absolute;
+          background: $web-color;
+          border-radius: 2px;
+          width: 100%;
+          height: 4px;
+          margin-top: 28px;
+          display: block;
+        }
       }
     }
 
-    &__icon {
+    &__contact {
+      list-style: none;
       display: flex;
-      align-items: center;
+      flex-direction: column;
 
-      &:first-child {
-        margin-left: 0px;
+      justify-content: flex-end;
+
+      margin-left: 101px;
+      padding-left: 0px;
+      gap: 10px;
+
+      &__text {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        text-decoration: none;
+
+        letter-spacing: 0.02em;
+        gap: 10px;
+        fill: $label-color;
+        color: $label-color;
+
+        &:focus,
+        &:active,
+        &:hover {
+          fill: $web-color;
+          color: $web-color;
+          cursor: pointer;
+          transition: $defoultTransition;
+        }
       }
-      &:last-child {
-        margin-left: 50px;
+
+      &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: start;
       }
     }
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .header-box {
+    display: flex;
+    align-items: center;
+
+    &__navigation {
+      list-style: none;
+      display: flex;
+      gap: 46px;
+
+      &:first-child {
+        margin-left: 93px;
+      }
+    }
+
+    &__list {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      color: $link-color;
+
+      &:focus,
+      &:active,
+      &:hover {
+        color: $web-color;
+        transition: $defoultTransition;
+      }
+
+      &--is-active {
+        position: relative;
+        color: $web-color;
+
+        &::after {
+          content: "";
+          position: absolute;
+          background: $web-color;
+          border-radius: 2px;
+          width: 100%;
+          height: 4px;
+          margin-top: 28px;
+          display: block;
+        }
+      }
+    }
+
+    &__contact {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-left: 345px;
+      gap: 0px;
+
+      &__text {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        text-decoration: none;
+        letter-spacing: 0.02em;
+        gap: 10px;
+        fill: $label-color;
+        color: $label-color;
+
+        &:focus,
+        &:active,
+        &:hover {
+          fill: $web-color;
+          color: $web-color;
+          cursor: pointer;
+          transition: $defoultTransition;
+        }
+      }
+
+      &__icon {
+        display: flex;
+        align-items: center;
+
+        &:first-child {
+          margin-left: 0px;
+        }
+        &:last-child {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}
+/*&:first-child {
+  margin-left: 0px;
+}
+&:last-child {
+  margin-left: 50px;
+}*/

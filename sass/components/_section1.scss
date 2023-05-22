@@ -17,9 +17,9 @@
 
   &__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    width: 696px;
+    font-size: 26px;
+    line-height: 1.62;
+    width: 365px;
     color: $white-color;
     text-align: center;
     letter-spacing: 0.06em;
@@ -36,6 +36,9 @@
     border-radius: 4px;
     margin-top: 30px;
     padding: 8px 40px 8px 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 
     &:hover,
     &:focus,
@@ -68,5 +71,20 @@
     visibility: hidden;
     opacity: 0;
     transform: translate(0%, 0%) scale(0) rotate(0deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section1 {
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section1 {
+    &__title {
+      font-size: 44px;
+      line-height: 1.36;
+      width: 696px;
+    }
   }
 }

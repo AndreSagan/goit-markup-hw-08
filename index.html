@@ -23,52 +23,80 @@
   </head>
   <body>
     <header>
-      <div class="container header-box">
-        <a class="logo" href="./index.html"
-          ><span class="logo__blue-text">Web</span><span>Studio</span></a
-        >
+      <div class="container">
+        <div class="header-box">
+          <a class="logo" href="./index.html"
+            ><span class="logo__blue-text">Web</span><span>Studio</span></a
+          >
+          <nav>
+            <ul class="header-box__navigation">
+              <li class="header-box__list-style">
+                <a
+                  class="header-box__list header-box__list--is-active"
+                  href="./index.html"
+                  >Agencja</a
+                >
+              </li>
+              <li>
+                <a class="header-box__list" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a class="header-box__list" href="#">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
 
-        <nav>
-          <ul class="header-box__navigation">
-            <li class="header-box__list-style">
+          <ul class="header-box__contact">
+            <li class="header-box__contact__icon">
               <a
-                class="header-box__list header-box__list--is-active"
-                href="./index.html"
-                >Agencja</a
+                class="header-box__contact__text"
+                href="mailto:info@example.com"
+              >
+                <svg width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@example.com
+              </a>
+            </li>
+            <li class="header-box__contact__icon">
+              <a class="header-box__contact__text" href="tel:48111111111">
+                <svg width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +48 111 111 111</a
               >
             </li>
-            <li>
-              <a class="header-box__list" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li>
-              <a class="header-box__list" href="#">Kontakt</a>
-            </li>
           </ul>
-        </nav>
-
-        <ul class="header-box__contact">
-          <li class="header-box__contact__icon">
-            <a class="header-box__contact__text" href="mailto:info@example.com">
-              <svg width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@example.com
-            </a>
-          </li>
-          <li class="header-box__contact__icon">
-            <a class="header-box__contact__text" href="tel:48111111111">
-              <svg width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +48 111 111 111</a
+        </div>
+        <div>
+          <button
+            class="menu__toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
             >
-          </li>
-        </ul>
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
     <main>
       <!--Section1-->
+
       <section class="section section1">
         <div class="section1__content container">
           <h1 class="section1__title">
@@ -469,10 +497,58 @@
       -->
       <!--Section5-->
     </main>
-    <!--
+    <div class="menu__container js-menu-container" id="mobile-menu">
+      <svg width="40px" height="40px" class="menu__icon-close js-close-menu">
+        <use href="./images/icons.svg#icon-close_40px"></use>
+      </svg>
+      <ul class="menu__nav">
+        <li>
+          <a href="#" class="menu__link">Agencja</a>
+        </li>
+        <li>
+          <a href="./portfolio.html" class="menu__link">Portfolio</a>
+        </li>
+        <li>
+          <a href="#" class="menu__link">Kontakt</a>
+        </li>
+      </ul>
+
+      <ul class="menu__nav">
+        <li>
+          <a href="+48111111111" class="menu__link-contact">
+            +48 111 111 111
+          </a>
+        </li>
+        <li>
+          <a
+            href="mailto:info@example.com"
+            class="menu__link-contact menu__link-contact--mail"
+          >
+            info@example.com</a
+          >
+        </li>
+      </ul>
+      <ul class="menu__nav">
+        <li>
+          <a href="#" class="menu__link-social"> Instagram </a>
+        </li>
+        <li>
+          <a href="#" class="menu__link-social"> Twitter </a>
+        </li>
+        <li>
+          <a href="#" class="menu__link-social"> Facebook </a>
+        </li>
+        <li>
+          <a href="#" class="menu__link-social menu__link-social--linkedin">
+            Linkedin
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <footer class="footer">
       <div class="container footer__block">
-        <div>
+        <div class="footer__div">
           <a href="./index.html" class="logo"
             ><span class="logo__blue-text">Web</span
             ><span class="logo__white-text">Studio</span></a
@@ -533,8 +609,9 @@
           </div>
         </form>
       </div>
-    </footer> 
-    -->
+    </footer>
+
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
