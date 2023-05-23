@@ -3,12 +3,12 @@
 
   &__gallery {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 30px;
   }
   &__figure {
     background-color: $white-color;
-    width: 270px;
+    width: 450px;
     flex-direction: column;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -17,7 +17,7 @@
   &__figcaption {
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
   }
   &__name {
     font-weight: 500;
@@ -29,6 +29,46 @@
       font-weight: 400;
       color: $label-color;
       margin-top: 10px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .section4 {
+    &__gallery {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    &__figure {
+      width: 354px;
+    }
+
+    &__img {
+      width: 354px;
+      height: 374px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section4 {
+    &__gallery {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    &__figure {
+      width: 270px;
+    }
+
+    &__img {
+      width: 270px;
+      height: 260px;
+    }
+
+    &__figcaption {
+      padding-bottom: 30px;
     }
   }
 }

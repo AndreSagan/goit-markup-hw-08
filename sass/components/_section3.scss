@@ -1,5 +1,4 @@
 .section3 {
-  padding-top: 0px;
   display: none;
 }
 
@@ -10,7 +9,13 @@
 }
 @media screen and (min-width: 1200px) {
   .section3 {
+    display: flex;
     padding-top: 0px;
+
+    &__div {
+      display: flex;
+      flex-direction: column;
+    }
 
     &__dealing {
       display: flex;

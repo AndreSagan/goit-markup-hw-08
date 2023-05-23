@@ -1,7 +1,8 @@
 .header-box {
   display: flex;
   align-items: center;
-  /*gap: 276px;*/
+
+  justify-content: space-evenly;
 
   &__navigation {
     display: none;
@@ -72,8 +73,8 @@
         display: flex;
         align-items: center;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
+        font-size: 12px;
+        line-height: 1.17;
         text-decoration: none;
 
         letter-spacing: 0.02em;
@@ -102,9 +103,6 @@
 
 @media screen and (min-width: 1200px) {
   .header-box {
-    display: flex;
-    align-items: center;
-
     &__navigation {
       list-style: none;
       display: flex;
@@ -115,73 +113,16 @@
       }
     }
 
-    &__list {
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
-      text-decoration: none;
-      color: $link-color;
-
-      &:focus,
-      &:active,
-      &:hover {
-        color: $web-color;
-        transition: $defoultTransition;
-      }
-
-      &--is-active {
-        position: relative;
-        color: $web-color;
-
-        &::after {
-          content: "";
-          position: absolute;
-          background: $web-color;
-          border-radius: 2px;
-          width: 100%;
-          height: 4px;
-          margin-top: 28px;
-          display: block;
-        }
-      }
-    }
-
     &__contact {
-      list-style: none;
-      display: flex;
-      align-items: center;
       flex-direction: row;
-      justify-content: flex-end;
       margin-left: 345px;
       gap: 0px;
 
       &__text {
-        display: flex;
-        align-items: center;
-        font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
-        text-decoration: none;
-        letter-spacing: 0.02em;
-        gap: 10px;
-        fill: $label-color;
-        color: $label-color;
-
-        &:focus,
-        &:active,
-        &:hover {
-          fill: $web-color;
-          color: $web-color;
-          cursor: pointer;
-          transition: $defoultTransition;
-        }
       }
-
       &__icon {
-        display: flex;
-        align-items: center;
-
         &:first-child {
           margin-left: 0px;
         }
@@ -192,9 +133,3 @@
     }
   }
 }
-/*&:first-child {
-  margin-left: 0px;
-}
-&:last-child {
-  margin-left: 50px;
-}*/
