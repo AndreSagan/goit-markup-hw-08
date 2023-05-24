@@ -55,10 +55,40 @@
   }
   &__box-overlay {
     position: relative;
-    width: 370px;
+    width: 450px;
     height: 294px;
     margin: 0 auto;
     background: transparent;
     overflow: hidden;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-img {
+    &__figcaption {
+      box-sizing: border-box;
+      width: 354px;
+    }
+
+    &__box-overlay {
+      width: 354px;
+    }
+    &__box-overlay img {
+      width: 354px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-img {
+    &__figcaption {
+      box-sizing: border-box;
+      width: 370px;
+    }
+
+    &__box-overlay {
+      width: 370px;
+    }
+    &__box-overlay img {
+      width: 370px;
+    }
   }
 }

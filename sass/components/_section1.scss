@@ -6,7 +6,20 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/Baner.jpg);
+    url(../images/Baner-1200x1.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section1 {
+      background: url(../images/Baner-1200x1@2x.jpg);
+    }
+  }
+
+  &--adaptive {
+    max-width: 1600px;
+  }
 
   &__content {
     display: flex;
@@ -76,8 +89,11 @@
 
 @media screen and (min-width: 768px) {
   .section1 {
-    margin: auto;
+    max-width: 768px;
   }
+  /*.section1--adaptive {
+    max-width: 768px;
+  }*/
 }
 @media screen and (min-width: 1200px) {
   .section1 {
@@ -85,6 +101,10 @@
       font-size: 44px;
       line-height: 1.36;
       width: 696px;
+    }
+
+    &--adaptive {
+      max-width: 1200px;
     }
   }
 }
