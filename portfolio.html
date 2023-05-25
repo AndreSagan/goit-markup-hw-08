@@ -4,7 +4,7 @@
     <title>portfollio</title>
     <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-with, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -125,7 +125,7 @@
             <div class="portfolio-img__box-overlay">
               <img
                 src="./images/Technocrack.jpg"
-                srcset="./images/Technocrack@2x.jpg 2x"
+                srcset="./images/Technocrack-1200x2.jpg 2x"
                 width="450"
                 height="294"
                 alt="Strona internetowa"
@@ -138,7 +138,9 @@
                 konkurencji
               </p>
             </div>
-            <figcaption class="portfolio-img__figcaption">
+            <figcaption
+              class="portfolio-img__figcaption portfolio-img__figcaption--first"
+            >
               <div>
                 <h4 class="portfolio-img__figcaption__title">Technocrack</h4>
                 <p class="portfolio-img__figcaption__text">
@@ -151,7 +153,7 @@
             <div class="portfolio-img__box-overlay">
               <img
                 src="./images/GrafikaNewOrleanvsGoldenStar.jpg"
-                srcset="./images/GrafikaNewOrleanvsGoldenStar@2x.jpg 2x"
+                srcset="./images/GrafikaNewOrleanvsGoldenStar-1200x2.jpg 2x"
                 width="450"
                 height="294"
                 alt="Grafika New Orlean vs Golden Star"
@@ -175,7 +177,7 @@
             <div class="portfolio-img__box-overlay">
               <img
                 src="./images/RestauracjaSeafood.jpg"
-                srcset="./images/RestauracjaSeafood@2x.jpg 2x"
+                srcset="./images/RestauracjaSeafood-1200x2.jpg 2x"
                 width="450"
                 height="294"
                 alt="Restauracja Seafood"
@@ -199,7 +201,7 @@
             <div class="portfolio-img__box-overlay">
               <img
                 src="./images/ProjektPrime.jpg"
-                srcset="./images/ProjektPrime@2x.jpg 2x"
+                srcset="./images/ProjektPrime-1200x2.jpg 2x"
                 width="450"
                 height="294"
                 alt="Projekt Prime"
@@ -221,7 +223,7 @@
             <div class="portfolio-img__box-overlay">
               <img
                 src="./images/ProjektBoxes.jpg"
-                srcset="./images/ProjektBoxes@2x.jpg 2x"
+                srcset="./images/ProjektBoxes-1200x2.jpg 2x"
                 width="450"
                 height="294"
                 alt="Projekt Boxes"
@@ -243,7 +245,7 @@
             <div class="portfolio-img__box-overlay">
               <img
                 src="./images/InspirationhasnoBorders.jpg"
-                srcset="./images/InspirationhasnoBorders@2x.jpg 2x"
+                srcset="./images/InspirationhasnoBorders-1200x2.jpg 2x"
                 width="450"
                 height="294"
                 alt="Inspiration has no Borders"
@@ -267,7 +269,7 @@
             <div class="portfolio-img__box-overlay">
               <img
                 src="./images/MagazynLimitedEdition.jpg"
-                srcset="./images/MagazynLimitedEdition@2x.jpg 2x"
+                srcset="./images/MagazynLimitedEdition-1200x2.jpg 2x"
                 width="450"
                 height="294"
                 alt="Magazyn Limited Edition"
@@ -291,7 +293,7 @@
             <div class="portfolio-img__box-overlay">
               <img
                 src="./images/ProjektLAB.jpg"
-                srcset="./images/ProjektLAB@2x.jpg 2x"
+                srcset="./images/ProjektLAB-1200x2.jpg 2x"
                 width="450"
                 height="294"
                 alt="Projekt LAB"
@@ -313,7 +315,7 @@
             <div class="portfolio-img__box-overlay">
               <img
                 src="./images/GrowingBusiness.jpg"
-                srcset="./images/GrowingBusiness@2x.jpg 2x"
+                srcset="./images/GrowingBusiness-1200x2.jpg 2x"
                 width="450"
                 height="294"
                 alt="Growing Business"
@@ -335,6 +337,56 @@
       </section>
       <!--Section1-->
     </main>
+    <div class="menu__container js-menu-container" id="mobile-menu">
+      <svg width="40px" height="40px" class="menu__icon-close js-close-menu">
+        <use href="./images/icons.svg#icon-close_40px"></use>
+      </svg>
+      <ul class="menu__nav">
+        <li>
+          <a href="./index.html" class="menu__link">Agencja</a>
+        </li>
+        <li>
+          <a href="./portfolio.html" class="menu__link menu__link--is-active"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a href="#" class="menu__link">Kontakt</a>
+        </li>
+      </ul>
+
+      <ul class="menu__nav">
+        <li>
+          <a href="+48111111111" class="menu__link-contact">
+            +48 111 111 111
+          </a>
+        </li>
+        <li>
+          <a
+            href="mailto:info@example.com"
+            class="menu__link-contact menu__link-contact--mail"
+          >
+            info@example.com</a
+          >
+        </li>
+      </ul>
+      <ul class="menu__nav">
+        <li>
+          <a href="#" class="menu__link-social"> Instagram </a>
+        </li>
+        <li>
+          <a href="#" class="menu__link-social"> Twitter </a>
+        </li>
+        <li>
+          <a href="#" class="menu__link-social"> Facebook </a>
+        </li>
+        <li>
+          <a href="#" class="menu__link-social menu__link-social--linkedin">
+            Linkedin
+          </a>
+        </li>
+      </ul>
+    </div>
     <footer class="footer">
       <div class="container footer__block">
         <div class="footer__div">
@@ -399,5 +451,6 @@
         </form>
       </div>
     </footer>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

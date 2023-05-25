@@ -122,18 +122,17 @@
         font-size: 14px;
         line-height: 1.14;
 
-        &__svg {
-          &:first-child {
-            width: 16px;
-            height: 12px;
-          }
+        &__svg--mail {
+          width: 16px;
+          height: 12px;
+        }
 
-          &:last-child {
-            width: 10px;
-            height: 16px;
-          }
+        &__svg--tel {
+          width: 10px;
+          height: 16px;
         }
       }
+
       &__icon {
         &:first-child {
           margin-left: 0px;

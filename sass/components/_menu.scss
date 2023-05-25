@@ -38,8 +38,11 @@
     &:active {
       color: $web-color;
     }
-  }
 
+    &--is-active {
+      color: $web-color;
+    }
+  }
   &__link-contact {
     font-weight: 500;
     font-size: 34px;

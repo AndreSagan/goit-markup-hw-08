@@ -1,24 +1,19 @@
 .section1 {
-  padding: 200px 0;
-  max-width: 1600px;
+  padding: 118px 0;
+  max-width: 480px;
   background: linear-gradient(
       to top,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    /*url(../images/Baner1200x1.jpg);*/ url(../images/Baner.jpg);
-
+    url(../images/Baner480x1.jpg);
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .section1 {
-      background: url(../images/Baner1200x1@2x.jpg);
+      background: url(../images/Baner480x2.jpg);
     }
-  }
-
-  &--adaptive {
-    max-width: 1600px;
   }
 
   &__content {
@@ -90,21 +85,34 @@
 @media screen and (min-width: 768px) {
   .section1 {
     max-width: 768px;
+    background: url(../images/Baner768x1.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .section1 {
+        background: url(../images/Baner768x2.jpg);
+      }
+    }
   }
-  /*.section1--adaptive {
-    max-width: 768px;
-  }*/
 }
 @media screen and (min-width: 1200px) {
   .section1 {
-    &__title {
-      font-size: 44px;
-      line-height: 1.36;
-      width: 696px;
-    }
-
-    &--adaptive {
-      max-width: 1200px;
+    padding: 200px 0;
+    max-width: 1600px;
+    background: url(../images/Baner1200x1.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .section1 {
+        background: url(../images/Baner1200x2.jpg);
+      }
+      &__title {
+        font-size: 44px;
+        line-height: 1.36;
+        width: 696px;
+      }
     }
   }
 }
