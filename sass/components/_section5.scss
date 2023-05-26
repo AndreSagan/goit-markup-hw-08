@@ -12,13 +12,14 @@
   }
 
   &--link {
-    width: 170px;
+    width: 210px;
     height: 92px;
     padding: 16px 32px;
     border: 1px solid $socialLink-color;
     border-radius: 4px;
     fill: $socialLink-color;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
 
     &:hover,
     &:focus {
@@ -29,10 +30,21 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .section5 {
+    &--link {
+      width: 226px;
+    }
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .section5 {
     &__list {
       flex-wrap: nowrap;
+    }
+    &--link {
+      width: 170px;
     }
   }
 }
